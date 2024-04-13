@@ -26,7 +26,11 @@
  * JavaFX 22
 
 
-## Para distribuir e rodar.
+## For distribuition your application and run it in production.
   * You can package application using application plugin. 
-  * It will make a Ziped package with gradle distZip
-  * Before call sh script, set the enviroment variable $ export JAVA_FX_DIR="<Dir lib of javaFX/>"; export SIMPLE_JAVAFX_WITH_GRADLE_OPTS="--module-path $JAVA_FX_DIR --add-modules javafx.controls"
+    *   plugins { id 'application' }
+  * It will make a Ziped package with command
+    *   gradle distZip
+  * Before call sh script, set the enviroment variable 
+    *   $ export JAVA_FX_DIR="[[Dir lib of javaFX/]]"
+    *   $ export SIMPLE_JAVAFX_WITH_GRADLE_OPTS="--module-path $JAVA_FX_DIR --add-modules javafx.controls"
